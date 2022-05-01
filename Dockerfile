@@ -16,6 +16,6 @@ RUN apt-get update && apt-get -y install software-properties-common && add-apt-r
 
 EXPOSE 80 443
 
-RUN ADD ./projCert/website/ /var/www/html/website/
+ADD ./projCert/website/ /var/www/html/website/
 
 ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
