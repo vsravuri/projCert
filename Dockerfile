@@ -18,4 +18,5 @@ EXPOSE 80 443
 
 ADD ./projCert/website/ /var/www/html/website/
 
-ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+#ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
