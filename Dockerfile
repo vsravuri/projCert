@@ -1,7 +1,7 @@
 # A basic apache server with PHP. To use either add or bind mount content under /var/www
 # https://docs.docker.com/engine/reference/builder/
 
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 # Use bash instead of sh.
 SHELL ["/bin/bash", "-c"]
